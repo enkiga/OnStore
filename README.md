@@ -35,3 +35,7 @@ Ensure that the design is mobile-friendly, and test the page on different device
 If you achieved all the tasks, use a CSS framework (e.g., Bootstrap or tailwind) to enhance the responsiveness and styling of the landing page.
 
 Implement any additional features or components provided by the chosen library.
+
+## Documentation
+
+[Documentation](documentation.md)
