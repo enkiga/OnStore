@@ -1,41 +1,38 @@
-# Responsive Store Landing Page Design
+# ON.Store
 
-## Objective
+## Description
 
-Create a responsive landing page for an online store. The landing page should include a header, product section, and a footer. Focus on making the design visually appealing, and ensure that it looks good on various screen sizes..
+### Project Overview
 
-## Instructions
+**On.Store** is a dynamic e-commerce platform designed to provide a seamless online shopping experience for electronics enthusiasts. It offers a diverse range of products, from the latest smartphones and laptops to gaming consoles and smart home devices. The website is built using modern web technologies, ensuring a fast, responsive, and user-friendly experience.
 
-### Requirements
+### Design Choices
 
-#### HTML Structure
+The design of On.Store is inspired by a clean, minimalist aesthetic that emphasizes product imagery and clear navigation. Key design choices include:
 
-Design the HTML structure for the landing page, including a header, product section, and footer.
-Include placeholder content for the header, product section, and footer.
+- **Color Palette**: A muted color palette with pops of primary colors to highlight key elements and create visual interest.
+- **Typography**: A combination of sans-serif and serif fonts for readability and visual appeal.
+- **Responsive Design**: The website is fully responsive, adapting to various screen sizes and devices for optimal user experience.
 
-#### CSS Styling
+### Libraries and Frameworks
 
-- Use CSS to style the landing page with a clean and attractive design.
-- Ensure the page is responsive and looks good on both desktop and mobile devices.
-- Implement a navigation menu in the header with links to different sections of the page.
+- Tailwind CSS: A utility-first CSS framework for rapid UI development.
+- Font Awesome: Icon library for adding icons to the website.
 
-#### Product Section
+### Tech Stack
 
-Create a product section with at least four product cards.
-Each product card should include an image, product name, brief description, and a "Shop Now" button.
-Apply styles to make the product section visually appealing.
+- Frontend: HTML & CSS
+- Framework: Tailwind CSS
+- Icon Library: Font Awesome
 
-#### Responsive Design
+## Screenshots
 
-Utilize media queries to create a responsive layout that adjusts for various screen sizes.
-Ensure that the design is mobile-friendly, and test the page on different devices.
+- **Mobile Display**
+[!mobile view](assets/MobileView.png)
 
-#### Adding Libraries ( Extra points)
+- **Desktop View**
+[!desktop view](assets/DesktopView.png)
 
-If you achieved all the tasks, use a CSS framework (e.g., Bootstrap or tailwind) to enhance the responsiveness and styling of the landing page.
+## Note
 
-Implement any additional features or components provided by the chosen library.
-
-## Documentation
-
-[Documentation](Documentation.md)
+This project was designed to highlight... [Documentation](Documentation.md)
