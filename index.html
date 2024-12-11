@@ -1,18 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>On.Store</title>
-</head>
-<body>
-    <!-- Header Section -->
-     <header></header>
 
-    <!-- Product Section -->
-     <main></main>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary: '#f77f00',
+                        secondary: '#d62828',
+                        tertiary: ' #fcbf49',
+                        text: '#003049',
+                        background: '#eae2b7',
+
+                        white: '#f9f9f9',
+                        black: '#0c0a0a',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-background">
+    <!-- Header Section -->
+    <header class="w-full fixed top-0 right-0 left-0 z-50">
+        <!-- Announcement Bar -->
+        <div class="bg-tertiary px-4 py-3 text-white">
+            <p class="text-center text-text text-sm font-medium">
+                Orders over <span class="font-semibold">KES 5000/=</span> get free shipping!
+            </p>
+        </div>
+        <!-- Navbar with Logo -->
+        <nav class="flex justify-between items-center px-4 py-3 bg-white">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <h1 class="text-primary text-2xl font-bold ml-2"> <span class="text-text">ON.</span>Store</h1>
+            </div>
+            <!-- Navigation Links -->
+            <ul class="hidden sm:flex items-center">
+                <li class="mx-2">
+                    <a href="#"
+                        class="text-text font-medium hover:text-primary hover:font-bold transition ease-in-out duration-300">Home</a>
+                </li>
+                <li class="mx-2">
+                    <a href="#"
+                        class="text-text font-medium hover:text-primary hover:font-bold transition ease-in-out duration-300">Categories</a>
+                </li>
+                <li class="mx-2">
+                    <a href="#"
+                        class="text-text font-medium hover:text-primary hover:font-bold transition ease-in-out duration-300">Products</a>
+                </li>
+                <li class="mx-2">
+                    <a href="#"
+                        class="text-text font-medium hover:text-primary hover:font-bold transition ease-in-out duration-300">About</a>
+                </li>
+                <li class="mx-2">
+                    <a href="#"
+                        class="text-text font-medium hover:text-primary hover:font-bold transition ease-in-out duration-300">Contact</a>
+                </li>
+            </ul>
+
+            <!-- NavBar Button -->
+            <div class="sm:hidden bg-white">
+                <button class="text-text">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+
+
+    </header>
+
+    <main class="pt-24 sm:pt-20">
+        <!-- Hero Section -->
+        <section>
+            <div class="text-black pt-10 sm:py-0">
+                <div class="container mx-auto">
+                    <div class="flex flex-wrap justify-center sm:flex-nowrap md:justify-between items-center">
+                        <div class="text-center md:text-left flex flex-col gap-5">
+                            <h1 class="text-3xl sm:text-5xl font-bold font-header">Welcome to <span
+                                    class="text-primary">ON.</span>Store</h1>
+                            <p class="text-base font-light mt-4">
+                                Your one-stop shop for all your electronics needs. Find
+                                everything you need in one place, from the latest smartphones and laptops to smart home
+                                devices and gaming consoles. We make it easy to shop online or in-store.
+                            </p>
+                            <div class="my-4 flex items-center gap-3 justify-center sm:justify-start">
+                                <a href="#"
+                                    class="bg-primary text-white px-6 py-2 rounded-md hover:bg-text hover:text-tertiary transition ease-in-out duration-300">
+                                    Products
+                                </a>
+                                <a href="#"
+                                    class="bg-white text-text px-6 py-2 rounded-md hover:bg-text hover:text-tertiary transition ease-in-out duration-300">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                        <img src="assets/Hero.png" alt="Hero Image" class="w-full sm:w-1/2 h-11/12 object-contain">
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Category Listing Section-->
+        <section class="bg-primary/30 py-3">
+            <div class="container mx-auto my-10">
+                <h2 class="text-3xl font-bold text-text text-center font-header">Our Top Categories</h2>
+                <div class="flex flex-wrap justify-center gap-5 my-6 w-full px-4 sm:px-0">
+                    <!-- Category Item -->
+                    <div
+                        class="bg-white rounded-md  w-full sm:w-[220px] h-[275px] shadow-md relative cursor-pointer hover:scale-105 transition ease-in-out duration-300">
+                        <img src="assets/Category1.jpg" alt="Category 1" class="w-full h-full rounded-md  object-cover">
+                        <div class="absolute inset-0 bg-text/50 rounded-md"></div>
+                        <h3 class="absolute bottom-2 right-3 text-white text-xl font-bold mt-2 text-end">Computing &
+                            Productivity</h3>
+                    </div>
+
+                    <!-- Category Item -->
+                    <div
+                        class="bg-white rounded-md  w-full sm:w-[220px] h-[275px] shadow-md relative cursor-pointer hover:scale-105 transition ease-in-out duration-300">
+                        <img src="assets/Category2.jpg" alt="Category 1" class="w-full h-full rounded-md  object-cover">
+                        <div class="absolute inset-0 bg-text/50 rounded-md"></div>
+                        <h3 class="absolute bottom-2 right-3 text-white text-xl font-semibold mt-2 text-end">
+                            Communication & Entertainment</h3>
+                    </div>
+
+                    <!-- Category Item -->
+                    <div
+                        class="bg-white rounded-md w-full sm:w-[220px] h-[275px] shadow-md relative cursor-pointer hover:scale-105 transition ease-in-out duration-300">
+                        <img src="assets/Category3.jpg" alt="Category 1" class="w-full h-full rounded-md  object-cover">
+                        <div class="absolute inset-0 bg-text/50 rounded-md"></div>
+                        <h3 class="absolute bottom-2 right-3 text-white text-xl font-semibold mt-2 text-end">Home &
+                            Lifestyle Electronics</h3>
+                    </div>
+
+                    <!-- Category Item -->
+                    <div
+                        class="bg-white rounded-md  w-full sm:w-[220px] h-[275px] shadow-md relative cursor-pointer hover:scale-105 transition ease-in-out duration-300">
+                        <img src="assets/Category4.jpg" alt="Category 1" class="w-full h-full rounded-md  object-cover">
+                        <div class="absolute inset-0 bg-text/50 rounded-md"></div>
+                        <h3 class="absolute bottom-2 right-3 text-white text-xl font-semibold mt-2 text-end">Components
+                            & Peripherals</h3>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Listing Section-->
+        <section>
+            <div class="container mx-auto my-10">
+                <h2 class="text-3xl font-bold text-text text-center font-header">Our Top Products</h2>
+                <div class="flex flex-wrap justify-center gap-5 my-6 w-full px-4 sm:px-0">
+                    <!-- Product Item -->
+                    <div class="rounded-md flex flex-col w-[220px] h-[350px] cursor-pointer">
+                        <img src="assets/Product1.jpg" alt="Product 1" class="w-full h-7/12 rounded-t-md  object-cover">
+
+                        <div class="w-full h-5/12 flex flex-col gap-2">
+                            <h3 class="text-text text-base font-semibold mt-2 text-start">Apple iPhone 15 Pro Max</h3>
+                            <p class="text-text text-xs font-light mt-2 text-start line-clamp-2">
+                                The ultimate smartphone with a stunning display, powerful A17 Bionic chip, and advanced
+                                camera system.
+                            </p>
+                            <a href="#"
+                                class="bg-primary text-white text-center px-6 py-2 rounded-md hover:bg-text hover:text-tertiary transition ease-in-out duration-300">
+                                Shop Now
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Product Item -->
+                    <div class="rounded-md flex flex-col w-[220px] h-[350px] cursor-pointer">
+                        <img src="assets/Product2.jpg" alt="Product 1" class="w-full h-7/12 rounded-t-md  object-cover">
+
+                        <div class="w-full h-5/12 flex flex-col gap-2">
+                            <h3 class="text-text text-base font-semibold mt-2 text-start">Dell XPS 13 Plus</h3>
+                            <p class="text-text text-xs font-light mt-2 text-start line-clamp-2">
+                                A sleek and powerful laptop with a stunning OLED display, 13th-gen Intel Core processor,
+                                and long battery life.
+                            </p>
+                            <a href="#"
+                                class="bg-primary text-white text-center px-6 py-2 rounded-md hover:bg-text hover:text-tertiary transition ease-in-out duration-300">
+                                Shop Now
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Product Item -->
+                    <div class="rounded-md flex flex-col w-[220px] h-[350px] cursor-pointer">
+                        <img src="assets/Product3.jpg" alt="Product 1" class="w-full h-7/12 rounded-t-md  object-cover">
+
+                        <div class="w-full h-5/12 flex flex-col gap-2">
+                            <h3 class="text-text text-base font-semibold mt-2 text-start">Sony PlayStation 5</h3>
+                            <p class="text-text text-xs font-light mt-2 text-start line-clamp-2">
+                                The next-generation gaming console with incredible graphics, fast loading times, and
+                                immersive gaming experiences.
+                            </p>
+                            <a href="#"
+                                class="bg-primary text-white text-center px-6 py-2 rounded-md hover:bg-text hover:text-tertiary transition ease-in-out duration-300">
+                                Shop Now
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Product Item -->
+                    <div class="rounded-md flex flex-col w-[220px] h-[350px] cursor-pointer">
+                        <img src="assets/Product4.jpg" alt="Product 1" class="w-full h-7/12 rounded-t-md  object-cover">
+
+                        <div class="w-full h-5/12 flex flex-col gap-2">
+                            <h3 class="text-text text-base font-semibold mt-2 text-start">Samsung Galaxy Watch 6</h3>
+                            <p class="text-text text-xs font-light mt-2 text-start line-clamp-2">
+                                A stylish and functional smartwatch with advanced health tracking features, long battery
+                                life, and classic design.
+                            </p>
+                            <a href="#"
+                                class="bg-primary text-white text-center px-6 py-2 rounded-md hover:bg-text hover:text-tertiary transition ease-in-out duration-300">
+                                Shop Now
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Product Item -->
+                    <div class="rounded-md flex flex-col w-[220px] h-[350px] cursor-pointer">
+                        <img src="assets/Product5.jpg" alt="Product 1" class="w-full h-7/12 rounded-t-md  object-cover">
+
+                        <div class="w-full h-5/12 flex flex-col gap-2">
+                            <h3 class="text-text text-base font-semibold mt-2 text-start">Logitech G Pro X Superlight
+                            </h3>
+                            <p class="text-text text-xs font-light mt-2 text-start line-clamp-2">
+                                A lightweight and high-performance gaming mouse designed for professional gamers.
+                            </p>
+                            <a href="#"
+                                class="bg-primary text-white text-center px-6 py-2 rounded-md hover:bg-text hover:text-tertiary transition ease-in-out duration-300">
+                                Shop Now
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Product Item -->
+                    <div class="rounded-md flex flex-col w-[220px] h-[350px] cursor-pointer">
+                        <img src="assets/Product6.jpg" alt="Product 1" class="w-full h-7/12 rounded-t-md  object-cover">
+
+                        <div class="w-full h-5/12 flex flex-col gap-2">
+                            <h3 class="text-text text-base font-semibold mt-2 text-start">Bose QuietComfort Earbuds</h3>
+                            <p class="text-text text-xs font-light mt-2 text-start line-clamp-2">
+                                Premium noise-canceling earbuds with exceptional sound quality, comfortable fit, and
+                                long battery life.
+                            </p>
+                            <a href="#"
+                                class="bg-primary text-white text-center px-6 py-2 rounded-md hover:bg-text hover:text-tertiary transition ease-in-out duration-300">
+                                Shop Now
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Product Item -->
+                    <div class="rounded-md flex flex-col w-[220px] h-[350px] cursor-pointer">
+                        <img src="assets/Product7.jpg" alt="Product 1" class="w-full h-7/12 rounded-t-md  object-cover">
+
+                        <div class="w-full h-5/12 flex flex-col gap-2">
+                            <h3 class="text-text text-base font-semibold mt-2 text-start">Ring Video Doorbell Pro 2</h3>
+                            <p class="text-text text-xs font-light mt-2 text-start line-clamp-2">
+                                A smart doorbell with HD video, night vision, and two-way talk, providing security and
+                                convenience for your home.
+                            </p>
+                            <a href="#"
+                                class="bg-primary text-white text-center px-6 py-2 rounded-md hover:bg-text hover:text-tertiary transition ease-in-out duration-300">
+                                Shop Now
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Product Item -->
+                    <div class="rounded-md flex flex-col w-[220px] h-[350px] cursor-pointer">
+                        <img src="assets/Product8.jpg" alt="Product 1" class="w-full h-7/12 rounded-t-md  object-cover">
+
+                        <div class="w-full h-5/12 flex flex-col gap-2">
+                            <h3 class="text-text text-base font-semibold mt-2 text-start">Apple MacBook Air M2</h3>
+                            <p class="text-text text-xs font-light mt-2 text-start line-clamp-2">
+                                A portable and powerful laptop with a stunning display, long battery life, and the
+                                latest M2 chip.
+                            </p>
+                            <a href="#"
+                                class="bg-primary text-white text-center px-6 py-2 rounded-md hover:bg-text hover:text-tertiary transition ease-in-out duration-300">
+                                Shop Now
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- About Us Section -->
+         <section class="bg-primary/30 py-10">
+            <div class="container mx-auto my-10">
+                <h2 class="text-3xl font-bold text-text text-center font-header">About Us</h2>
+                <div class="flex flex-col sm:flex-row justify-between my-6 w-full px-4 sm:px-0">
+                    <div class="w-full sm:w-1/2 px-4">
+                        <img src="assets/AboutUs.jpg" alt="About Us" class="w-full h-full rounded-md  object-cover">
+                    </div>
+                    <div class="w-full sm:w-1/2 flex flex-col gap-6">
+                        <h3 class="text-2xl font-semibold text-text text-center sm:text-start  mt-4 sm:mt-0">Who We Are</h3>
+                        <p class="text-base font-light text-text">
+                            ON.Store is a leading electronics retailer that offers a wide range of products from the
+                            world's top brands. We are committed to providing our customers with the best shopping
+                            experience, whether online or in-store. Our team of experts is always on hand to help you
+                            find the perfect product for your needs.
+                        </p>
+                        <h3 class="text-2xl font-semibold text-text text-center sm:text-start">Our Mission</h3>
+                        <p class="text-base font-light text-text">
+                            Our mission is to make it easy for you to find the latest and greatest electronics products
+                            at the best prices. We are dedicated to providing our customers with the highest level of
+                            service and support, so you can shop with confidence.
+                        </p>
+                        <h3 class="text-2xl font-semibold text-text text-center sm:text-start">Why Choose Us</h3>
+                        <p class="text-base font-light text-text">
+                            At ON.Store, we are passionate about technology and innovation. We are constantly updating
+                            our product range to bring you the latest and greatest products on the market. With our
+                            commitment to quality and customer service, you can trust us to help you find the perfect
+                            product for your needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+        <!-- Newsletter Section -->
+         <section>
+            <div class="container mx-auto my-10">
+                <h2 class="text-3xl font-bold text-text text-center font-header">Subscribe to Our Newsletter</h2>
+                <div class="flex flex-col sm:flex-row justify-between my-6 w-full px-4 sm:px-0">
+                    <div class="w-full sm:w-1/2 flex flex-col gap-6">
+                        <p class="text-base font-light text-text">
+                            Sign up for our newsletter to receive the latest news, updates, and special offers from
+                            ON.Store. Be the first to know about new products, promotions, and events.
+                        </p>
+                        <form action="#" method="POST" class="flex flex-col sm:flex-row  gap-4">
+                            <input type="email" name="email" id="email" placeholder="Enter your email address"
+                                class="bg-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent sm:flex-1">
+                            <button type="submit"
+                                class="bg-primary text-white text-center px-6 py-2 rounded-md hover:bg-text hover:text-tertiary transition ease-in-out duration-300">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                    <div class="hidden sm:block sm:w-1/2 px-4">
+                        <img src="assets/Newsletter.jpg" alt="Newsletter" class="w-full h-full rounded-md  object-cover">
+                    </div>
+                </div>
+            </div>
+         </section>
+    </main>
 
     <!-- Footer -->
-     <footer></footer>
+    <footer>
+        <div class="bg-primary py-6 text-white">
+            <div class="container mx-auto">
+                <div class="flex flex-col sm:flex-row justify-between items-center">
+                    <div class="text-center sm:text-left">
+                        <h1 class="text-2xl font-bold font-header">ON.<span class="text-text">Store</span></h1>
+                        <p class="text-sm font-light mt-2">Your one-stop shop for all your electronics needs.</p>
+                    </div>
+                    <div class="flex gap-4 mt-4 sm:mt-0">
+                        <a href="#" class="text-white hover:text-text transition ease-in-out duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-text transition ease-in-out duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-text transition ease-in-out duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-text transition ease-in-out duration-300">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white py-4 text-text">
+            <div class="container mx-auto">
+                <p class="text-center text-sm font-light">© 2024 ON.Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
