@@ -28,10 +28,10 @@ The design of On.Store is inspired by a clean, minimalist aesthetic that emphasi
 ## Screenshots
 
 - **Mobile Display**
-[!mobile view](assets/MobileView.png)
+![mobile view](assets/MobileView.png)
 
 - **Desktop View**
-[!desktop view](assets/DesktopView.png)
+![desktop view](assets/DesktopView.png)
 
 ## Note
 
